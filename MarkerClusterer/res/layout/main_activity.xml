@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/commands"
+        android:layout_alignParentTop="true"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+    <LinearLayout
+        android:id="@+id/commands"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+        <include layout="@layout/commands_table" />
+    </LinearLayout>
+
+</RelativeLayout>
